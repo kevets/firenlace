@@ -1,91 +1,115 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-
 const primalProfile =
-  'https://primal.net/p/nprofile1qqstl4ze9gew53p9j9yffxjguenjyxexz5vghymws4rrs0w3wvz3epcwf434q';
+  'https://primal.net/p/nprofile1qqstl4ze9gew53p9j9yffxjguenjyxexz5vghymws4rrs0w3wvz3epcwf434q#reads';
 ---
 
-<BaseLayout>
-  <main>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <header class="hero">
-      <div class="flower">✦</div>
+    <title>Fire & Lace</title>
 
-      <h1 class="script">Fire &amp; Lace</h1>
+    <meta
+      name="description"
+      content="Love, faith, spirit, beauty, and wisdom."
+    />
+  </head>
 
-      <p class="motto">
-        Love · Faith · Spirit · Beauty · Wisdom
-      </p>
+  <body>
 
-      <p class="intro">
-        A personal journal of simple reflections, meaningful living,
-        and finding beauty in the everyday.
-      </p>
-    </header>
+    <main>
 
-    <section class="content">
+      <header class="hero">
+        <div class="flower">✦</div>
 
-      <div class="column">
-        <div class="section-heading">
-          <span class="script">The Living Fire</span>
-          <h2>Primal</h2>
-        </div>
+        <h1>Fire &amp; Lace</h1>
 
-        <div class="primal-card">
+        <p class="motto">
+          Love · Faith · Spirit · Beauty · Wisdom
+        </p>
 
-          <div class="primal-mark">✦</div>
-
-          <h3>Fire &amp; Lace on Nostr</h3>
-
-          <p>
-            Follow the latest posts, conversations, and reflections
-            directly through Primal.
-          </p>
-
-          <a
-            class="button"
-            href={primalProfile}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Open Fire &amp; Lace in Primal ↗
-          </a>
-
-        </div>
-      </div>
+        <p class="intro">
+          A personal journal of simple reflections,
+          meaningful living, and finding beauty in the everyday.
+        </p>
+      </header>
 
 
-      <div class="column">
-        <div class="section-heading">
-          <span class="script">The Written Word</span>
-          <h2>Reflections</h2>
-        </div>
+      <section class="content">
 
-        <div class="article-card">
+        <!-- PRIMAL -->
 
-          <p class="eyebrow">
-            NIP-23 · LONG-FORM
-          </p>
+        <div class="column">
 
-          <h3>Begin Again</h3>
+          <div class="section-heading">
+            <span>The Living Fire</span>
+            <h2>Primal</h2>
+          </div>
 
-          <p>
-            Sometimes wellness is simply remembering to slow down.
-          </p>
+          <div class="primal-card">
 
-          <p>
-            Take a breath. Step outside. Notice the light.
-            Say a prayer. Call someone you love.
-          </p>
+            <div class="primal-mark">✦</div>
 
-          <a class="read-link" href="/articles/begin-again/">
-            Read reflection →
-          </a>
+            <h3>Fire &amp; Lace on Nostr</h3>
+
+            <p>
+              Follow posts, conversations, and reflections
+              through Primal.
+            </p>
+
+            <a
+              class="button"
+              href={primalProfile}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Open in Primal ↗
+            </a>
+
+          </div>
 
         </div>
-      </div>
 
-    </section>
 
-  </main>
-</BaseLayout>
+        <!-- ARTICLES -->
+
+        <div class="column">
+
+          <div class="section-heading">
+            <span>The Written Word</span>
+            <h2>Reflections</h2>
+          </div>
+
+          <div class="article-card">
+
+            <p class="eyebrow">
+              NIP-23 · LONG-FORM
+            </p>
+
+            <h3>Begin Again</h3>
+
+            <p>
+              Sometimes wellness is simply remembering
+              to slow down.
+            </p>
+
+            <p>
+              Take a breath. Step outside. Notice the light.
+              Say a prayer. Call someone you love.
+            </p>
+
+            <a class="read-link" href="#">
+              Read reflection →
+            </a>
+
+          </div>
+
+        </div>
+
+      </section>
+
+    </main>
+
+  </body>
+</html>
